@@ -1,0 +1,24 @@
+@font-face {
+font-family: myFont;
+src: url('fonts/fonde.otf');
+}
+@font-face {
+font-family: myFont2;
+src: url('fonts/Brown Sugar .ttf');
+}
+@font-face {
+font-family: myFont3;
+src: url('fonts/CerottaPersonalUseOnly-0vW5d.otf');
+}
+@font-face {
+font-family: myFont4;
+src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+@font-face {
+font-family: myFont5;
+src: url('fonts/Distant_Stroke.otf');
+}
+@font-face {
+font-family: myFont6;
+src: url('fonts/LuxuriousScript-Regular.ttf');
+}

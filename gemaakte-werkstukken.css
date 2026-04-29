@@ -1,0 +1,358 @@
+@import "fonts.css";
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f8f8; 
+    font-family: myFont;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #fff; 
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #e0e0e0;
+    top: 0;
+    z-index: 1000;
+}
+
+.topnav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 2.5%;
+    box-sizing: border-box;
+}
+
+.topnav a {
+    color: #333;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: myFont3;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #9C8779;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.portfolio-layout {
+max-width: 1200px;
+margin: 80px auto;
+padding: 20px;
+}
+.intro-section {
+text-align: center;
+margin-bottom: 40px;
+}
+.intro-section h1 {
+font-family: myFont5;
+font-size: 5em;
+color: #9C8779;
+margin-bottom: 10px;
+}
+.intro-section p {
+font-size: 20px;
+    font-family: myFont4 serif;
+    color: rgb(0, 0, 0);
+}
+.decorative-line {
+width: 80%;
+height: 2px;
+background: linear-gradient(to right, rgba(0, 0, 0, 0), #ddd, rgba(0, 0, 0, 0));
+margin: 20px auto;
+}
+.project-timeline {
+position: relative;
+}
+.project-item {
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+position: relative;
+padding-left: 60px;
+}
+.project-image  img:hover {
+transform: translateY(-10px);
+}
+.project-image img {
+width: 250px;
+height: 200px;
+border: #9C8779 2px solid;
+transition: transform 0.3s ease;
+background-size: cover;
+background-position: center;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-right: 30px;
+}
+.project-details {
+    background-color: white;
+    width: 200px;
+    height: 230px;
+    border-radius: 5px;
+    border: 1.5px solid #9C8779;
+    padding: 20px;
+flex: 1;
+}
+.project-details h3 {
+font-family: myFont3;
+font-size: 1.9em;
+margin-bottom: 10px;
+color: #444;
+}
+.project-details p {
+color: #000000;
+font-weight: 300;
+font-family: myFont4, serif;
+margin-bottom: 15px;
+}
+.project-link {
+display: inline-block;
+    border: 1px solid #ad947e;
+    color: #000000;
+    padding: 10px 20px;
+    font-family: 'myFont4', serif;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+.project-link:hover {
+background-color: #9C8779;
+}
+.portfolio-layout {
+max-width: 1200px;
+margin-top: 80px;
+padding: 20px;
+position: relative;
+}
+.project-timeline {
+position: relative;
+padding: 0 40px;
+}
+.project-timeline::before,
+.project-timeline::after {
+content: '';
+position: absolute;
+top: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #ddd, rgba(0, 0, 0, 0));
+}
+.project-timeline::before {
+left: 0;
+}
+.project-timeline::after {
+right: 0;
+}
+.project-item:nth-child(even) .project-image {
+transform: rotate(2deg);
+margin-left: 50px;
+}
+.project-item:nth-child(odd) .project-image {
+transform: rotate(-2deg);
+margin-right: 50px;
+}
+.project-timeline::before,
+.project-timeline::after {
+content: '';
+position: absolute;
+top: 0;
+width: 2px;
+height: 100%;
+background-color: #ddd;
+}
+.project-timeline::before {
+left: 20px;
+}
+.project-timeline::after {
+right: 0px;
+}
+
+.footer {
+background-color: #000000;
+font-family: Georgia,serif;
+color: #fff;
+text-align: center;
+padding: 20px 0;
+overflow-x: hidden;
+}
+.contact-form-section h1 {
+font-family: myFont2;
+color: #000000;
+font-size: 39px;
+text-align: center;
+padding: 53px 9px 31px 10px;
+opacity: 35%;
+}
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+}
+.container > div {
+flex: 1;
+text-align: center;
+}
+.footer h1 {
+font-family: myFont3;
+color: #fff;
+font-size: 45px;
+margin: 0;
+text-align: left;
+}
+.icons{
+font-family: myFont3;
+font-size: 20px;
+margin-top: 15px;
+margin-bottom: 10px;
+}
+.container .footer-col a {
+font-family: myFont3;
+color: #fff;
+text-decoration: none;
+font-size: 15px;
+margin: 10px;
+text-align: left;
+}
+.footer-col-1 {
+display: flex;
+gap: 40px;
+justify-content: center;
+align-items: center;
+}
+.footer-col-1 a {
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+transition: color 0.3s ease;
+}
+.footer-col-1 a:hover {
+color: #ddd;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-col,
+.footer-col-1,
+.footer-col-2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+    backdrop-filter: blur(10px); 
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+
+.contact-info img{
+width: 90%;
+height: 20%;
+align-content: center;
+border-radius: 2%;
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+    .project-image {
+        margin: 0 0 20px 0 !important;
+    }
+    .project-details {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-col-2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .portfolio-layout {
+        padding: 20px 5%;
+    }
+
+    .werkstukken-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .werkstuk-card {
+        padding: 20px;
+    }
+
+    nav .topnav {
+        padding: 10px 5%;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .werkstukken-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .werkstuk-title {
+        font-size: 2rem;
+    }
+
+    .werkstuk-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
